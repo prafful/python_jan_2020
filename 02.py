@@ -5,6 +5,8 @@
 '''
 
 this is documentation
+parameters: no
+returns: void/nothing
 '''
 def myfunction():
         print("I am in function!")    
