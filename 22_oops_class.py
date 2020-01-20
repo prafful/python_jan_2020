@@ -32,3 +32,17 @@ print("Count of vehicle instances: ", Vehicle.vehicleCount)
 myVehicle1.selectVehicle()
 myVehicle2.selectVehicle()
 myVehicle3.selectVehicle()
+
+
+class Shop:
+    def __init__(self, name, no):
+        self.name = name
+        self.no = no
+        print("I am in Shop constructor!")
+
+
+myShop = Shop("Pyarelal Sweets", 444)
+print(myShop.name)
+print(myShop.no)     
+
+
