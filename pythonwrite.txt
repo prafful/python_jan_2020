@@ -1,0 +1,6 @@
+Hello from Python 
+Second to none! 
+That was fun to write to file 2!
+Hello from Python 
+Second to none! 
+That was fun to write to file 2!
