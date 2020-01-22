@@ -45,6 +45,7 @@ with open("pythonwrite.txt", "w" ) as fh:
     fh.write("Hello from Python \n")
     fh.write("Second to none! \n")
     fh.write("That was fun to write to file 2!\n")
+    fh.write("#######################################\n")
 print("File is Closed : ", fh.closed) 
 
 print("--------------------------------------------------------")
@@ -58,6 +59,49 @@ print("File is Closed : ", fh.closed)
 print("--------------------------------------------------------")
 with open("pythonwrite.txt", "r") as fh:
     content = fh.readlines()
-print(content)    
+print("Content Variable: ", content)    
 for eachline in content:
     print(eachline)
+
+print("--------------------------------------------------------")
+fh = open("pythonwrite.txt",'r')
+content1 = fh.read(10)
+content2 = fh.read(10)
+content3 = fh.read(10)
+print(content1)
+print(content2)
+print(content3)
+fh.close()
+print("--------------------------------------------------------")
+fh = open("pythonwrite.txt",'r')
+print("Current offset: ",  fh.tell())
+while True:
+    content = fh.read(10)
+    if content == '':
+        break
+    print("Current offset: ",  fh.tell())
+    print(content)
+fh.close()
+
+print("--------------------------------------------------------")
+fh = open("pythonwrite.txt",'r')
+# second parameter -> 0 - shift will start from beginning of file.
+# second parameter -> 1 - shift will start from current offset
+# second parameter -> 2 - EOF will be the current offset
+fh.read(10)
+check = fh.seek(0, 1)   
+content = fh.read(5)
+print(check)
+print(content)
+fh.close()
+# from Pyth
+# Pyth
+
+# some more examples of seek!
+
+#import os
+#os.rename("pythonwrite.txt", "pythonwrite1.txt")
+#os.remove("pythonwrite1.txt")
+#os.rename("pythonwrite1.txt", "pythonwrite2.txt")
+
+
