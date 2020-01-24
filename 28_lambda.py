@@ -23,16 +23,3 @@ value2 = lambdaList[1](7,5)
 value3 = lambdaList[2](7,5)
 print(value1, " ", value2, " ", value3)
 
-#map -> will work only on collection
-#    -> it will return the list created by lambda function (parameter of map)
-
-messages = ["Help", "Run", "Walk", "Eat", "Speak"]
-
-mapdone = map(lambda a: '@'+a+'@', messages)
-
-print(list(mapdone))
-
-
-mapdone = map(lambda a: a.upper(), messages)
-
-print(list(mapdone))
