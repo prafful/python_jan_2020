@@ -158,3 +158,81 @@ df.describe()
 
 df
 
+# In[34]:
+
+
+df.set_index('day')
+
+
+# In[36]:
+
+
+df
+
+
+# In[38]:
+
+
+newdf = df.set_index('day')
+newdf
+
+
+# In[39]:
+
+
+df.set_index('day', inplace=True)
+
+
+# In[40]:
+
+
+df
+
+
+# In[41]:
+
+
+df.index
+
+
+# In[42]:
+
+
+df.loc['1/3/2017']
+
+
+# In[43]:
+
+
+df.reset_index(inplace=True)
+
+
+# In[44]:
+
+
+df
+
+
+# In[45]:
+
+
+df.index
+
+
+# In[47]:
+
+
+df.set_index('event', inplace=True)
+
+
+# In[48]:
+
+
+df
+
+
+# In[49]:
+
+
+df.loc['Sunny']
+
