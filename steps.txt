@@ -1,0 +1,5 @@
+1. Get some real data (10000+ rows!)
+2. 70% of the work involves data cleaning!
+3. Apply some kind of AI/ML algorithm (supervised learning -> to get a model) and get some useful    prediction/information!. You may want to do it on parameter basis!
+4. Use the data for BI.
+5. Expose the model to the users via REST api!(Flask + pickle)
